@@ -1,0 +1,24 @@
+/*
+ * graphics.h
+ *
+ *  Created on: Jun 29, 2026
+ *      Author: NANDAN
+ */
+
+#ifndef INC_GRAPHICS_H_
+#define INC_GRAPHICS_H_
+
+#include <stdint.h>
+
+extern uint8_t buffer[1024];
+
+void clearBuffer();
+void drawPixel(uint8_t x, uint8_t y, uint8_t color);
+void drawHLine(uint8_t x, uint8_t y, uint8_t len);
+void drawVLine(uint8_t x, uint8_t y, uint8_t len);
+void drawRect(uint8_t x, uint8_t y, uint8_t w, uint8_t h);
+void drawString(uint8_t x, uint8_t y, char *str);
+void drawChar(uint8_t x, uint8_t y, char c);
+
+
+#endif /* INC_GRAPHICS_H_ */
